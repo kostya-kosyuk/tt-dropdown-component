@@ -1,0 +1,143 @@
+html {
+  font-size: 14px;
+  color: #F9FAFB;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #F9FAFB;
+  font-size: inherit;
+}
+
+.treeview {
+  background-color: #2E2F33;
+}
+.treeview__search {
+  font-size: 12px;
+}
+.treeview__button {
+  font-size: 12px;
+  color: #8F49DE;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.treeview__button:hover {
+  color: #aa74e7;
+}
+.treeview__buttons-container {
+  height: 2.5em;
+  border-top: 1.5px solid #5A5B5E;
+}
+.treeview__search-container {
+  height: 2.5em;
+  border-bottom: 1px solid #5A5B5E;
+}
+.treeview__nodes-container {
+  max-height: 18em;
+  overflow-y: scroll;
+}
+
+.form-control {
+  color: #F9FAFB;
+}
+
+.form-control-plaintext:focus {
+  border-color: transparent;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  color: #F9FAFB;
+}
+
+.form-control::placeholder {
+  color: #B6BFC8;
+}
+
+.fa-search {
+  color: #B6BFC8;
+}
+
+.fa-chevron-up {
+  color: #F9FAFB;
+  transition: transform 0.3s;
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+.arrow-down {
+  transform: rotate(180deg);
+}
+
+.node-item-container {
+  min-height: 2.25em;
+}
+.node-item-container:hover {
+  background-color: #2C1F3D;
+}
+
+.node-item {
+  min-height: 2.25em;
+  max-height: 2.25em;
+  overflow-y: hidden;
+}
+.node-item.expanded {
+  max-height: none;
+}
+.node-item__checkbox label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 0.25em;
+  padding: 0.5em;
+  cursor: pointer;
+}
+.node-item__checkbox input[type=checkbox]:checked + label {
+  background-color: #8F49DE;
+}
+.node-item__checkbox label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -65%) rotate(45deg);
+  width: 0.4em;
+  height: 0.6em;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  opacity: 0;
+}
+.node-item__checkbox input[type=checkbox]:checked + label::after {
+  opacity: 1;
+}
+.node-item__title {
+  font-size: 12px;
+}
+
+.form-check {
+  margin-bottom: 0.125em;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #B6BFC8;
+  border-radius: 6px;
+}
+
+/*# sourceMappingURL=styles.css.map */
